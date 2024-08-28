@@ -1,0 +1,784 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Raleway", sans-serif;
+}
+
+/* Header */
+
+header{
+    background-image: url(../imgs/background_header.png);
+    background-repeat: no-repeat;
+    background-size: 100% 80%;
+}
+
+header .container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 2%;
+}
+
+/* Header - Menu */
+
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo img{
+    width: 100%;
+    max-width: 200px;
+}
+
+nav .ul_desktop{
+    display: flex;
+    align-items: center;
+}
+
+.ul_desktop li{
+    margin-right: 30px;
+    list-style: none;
+}
+
+.ul_desktop li a{
+    color: #F0F4FA;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.line_li{
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: #FFDD33;
+    opacity: 0;
+    position: relative;
+    top: 5px;
+}
+
+ul li:hover .line_li{
+    opacity: 1;
+}
+
+ul button{
+    background-color: #0F3FD3;
+    color: white;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* Header - Main */
+
+.main_header h1{
+    text-align: center;
+    color: #FFFFFF;
+    font-weight: normal;
+    font-size: 35px;
+    margin-top: 30px;
+}
+
+.main_header h1 span{
+    font-weight: bold;
+}
+
+.main_header p{
+    font-size: 18px;
+    color: #ededed;
+    text-align: center;
+    margin: 15px 0px;
+    font-weight: normal;
+}
+
+.main_header_macbook{
+    width: 100%;
+    max-width: 600px;
+    height: 400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.macbook_top{
+    background-image: url(../imgs/background_macbook.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 90%;
+    height: 90%;
+    border-style: solid;
+    border-color: white;
+    border-width: 20px 13px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    outline: 1px solid rgb(218, 218, 218);
+}
+
+.macbook_bottom{
+    width: 100%;
+    height: 20px;
+    border-radius: 10px;
+    margin-top: -2px;
+    box-shadow: 0px 7px 10px -2px rgba(98, 98, 98, 0.75);
+    position: relative;
+}
+
+.macbook_bottom_mark{
+    position: absolute;
+    top: 4px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 7px;
+    background-color: #efefef;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+
+/* Main */
+
+/* Section 01 - Sponsors */
+
+main .sponsors_section{
+    margin: 50px 0;
+}
+
+.sponsors_section .container{
+    max-width: 1000px;
+    padding: 0 2%;
+    margin: 0 auto;
+    display: flex;
+}
+
+.sponsors_section .sponsors_single{
+    width: 33.3%;
+    cursor: pointer;
+}
+
+.sponsors_section img{
+    width: 100%;
+    max-width: 200px;
+}
+
+/* Section 02 - Diferencias */
+
+.diferenciais_section .container{
+    max-width: 1200px;
+    padding: 0 2%;
+    margin: 0 auto;
+}
+
+.diferenciais_box{
+    display: flex;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.diferenciais_single_space{
+    width: 33.3%;
+    padding: 8px;
+}
+
+.diferenciais_single{
+    border-radius: 20px;
+    padding: 40px 30px;
+    box-shadow: 0px 10px 50px  #2426721C;
+    height: 100%;
+}
+
+.diferenciais_title h1{
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+.diferenciais_title p{
+    text-align: center;
+    font-size: 18px;
+    color: #7E92AC;
+}
+
+.diferenciais_single img{
+    width: 63px;
+}
+
+.diferenciais_single h1{
+    font-size: 28px;
+    margin: 20px 0;
+}
+
+.diferenciais_single p{
+    font-size: 16px;
+    color: #7E92AC;
+    line-height: 25px;
+}
+
+/* Section 03 - Entrar em Contato */
+
+main .entrar_em_contato_section{
+    width: 100%;
+    min-height: 250px;
+    background-image: url(../imgs/banner.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+
+.entrar_em_contato_section .container{
+    width: 100%;
+    padding: 0 2%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50%, -50%);
+}
+
+.entrar_em_contato_section h1{
+    font-size: 35px;
+    color: white;
+    font-weight: normal;
+    text-align: center;
+}
+
+.entrar_em_contato_section p{
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.entrar_em_contato_section .entrar_contato_button{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.entrar_contato_button button{
+    padding: 10px 15px;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #FFDD33;
+    color: #0F3FD3;
+    border-radius: 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+/* Section 04 - Beneficios */
+
+.beneficios_section .container{
+    max-width: 1200px;
+    padding: 0 2%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.beneficios_text{
+    width: 50%;
+}
+
+.beneficios_text_title h1{
+    font-size: 35px;
+    color: black;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.beneficios_single{
+    display: flex;
+    align-items: center;
+    max-width: 500px;
+    margin-bottom: 30px;
+}
+
+.beneficios_single img{
+    width: 46px;
+    margin-right: 15px;
+}
+
+.beneficios_single span{
+    font-size: 16px;
+    color: #7E92AC;
+    line-height: 25px;
+}
+
+.beneficios_button button{
+    padding: 15px 20px;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: #255AFF;
+    color: #FFFFFF;
+    border-radius: 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.beneficios_section .beneficios_image{
+    width: 50%;
+    height: 500px;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.beneficios_section .beneficios_image_wraper{
+    width: 100%;
+    padding-top: 75%;
+    background-image: url(../imgs/beneficios_image.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 15px solid white;
+    border-radius: 40px;
+    box-shadow: 0px 10px 50px  #2426721C;
+}
+
+/* Section 05 - Depoimentos */
+
+main .depoimentos_section{
+    margin-top: 40px; 
+}
+
+.depoimentos_section .container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+
+.depoimentos_title h1{
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Estilos paro o Swiper API */
+
+.swiper{
+    width: 100%;
+    height: 510px;
+}
+
+.depoimentos_single_50{
+    width: 40% !important;
+}
+
+.depoimentos_single_25{
+    width: 30% !important;
+}   
+
+.depoimentos_single{
+    padding: 10px;
+}
+
+.depoimetos_wrraper{
+    box-shadow: 1px 3px 12px 3px #2426721C;
+    padding: 30px 20px 0px 20px;
+    border-radius: 20px;
+    height: 90%;
+}
+
+.swiper-pagination-bullet{
+    width: 15px !important;
+    height: 15px !important;
+}
+
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 10px 8px !important;
+}
+
+/* Depoimentos Slider */
+
+.depoimento_single_perfil_image{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.depoimento_single_perfil_image img{
+    width: 76px;
+}
+
+.depoimento_single_title h1{
+    text-align: center;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.depoimento_single_title p{
+    text-align: center;
+    font-size: 16px;
+    color: #7E92AC;
+    margin: 5px 0 15px 0px;
+}
+
+.depoimento_single_relato p{
+    font-size: 16px;
+    color: #7E92AC;
+    text-align: center;
+    line-height: 25px;
+}
+
+.depoimento_single_avalaicao{
+    display: flex;
+    justify-content: center;
+}
+
+.depoimento_single_avalaicao img{
+    width: 100%;
+    max-width: 126px;
+    margin-top: 15px;
+}
+
+/* Section 06 - Formulário de Contato  */
+
+main .contato_section{
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.contato_section .container{
+    max-width: 800px;
+    padding: 0 2%;
+    margin: 0 auto;
+}
+
+.contato_title h1{
+    font-size: 35px;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.contato_section .contato_form{
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contato_form .contato_form_input, .contato_form .contato_form_textarea, .contato_form .contato_form_buton{
+    width: 100%;
+}
+
+.contato_form_input input, .contato_form_textarea textarea{
+    width: 100%;
+    height: 45px;
+    border: 1px solid #C3CCE8;
+    border-radius: 10px;
+    padding: 0px 20px;
+    font-size: 16px;
+    background-color: #FCFDFF;
+    outline: none;
+    margin-bottom: 25px;
+}
+
+.contato_form_input input::placeholder, .contato_form_textarea textarea::placeholder{
+    color: #7E92AC;
+    font-weight: bold;
+}
+
+.contato_form_textarea textarea{
+    height: 250px;
+    padding: 20px;
+    resize: none;
+}
+
+.contato_form_buton button{
+    width: 100%;
+    border: none;
+    background-color: #255AFF;
+    color: #FFFFFF;
+    height: 40px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1.88px;
+    cursor: pointer;
+}
+
+/* Footer */
+
+footer{
+    background-color: #255AFF;
+}
+
+footer .container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 2%;
+}
+
+footer nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .desenvolvedor h2{
+    font-size: 18px;
+    font-weight: normal;
+    color: white;
+    text-decoration: none;
+}
+
+.nav_footer ul{
+    display: flex;
+    align-items: center;
+}
+
+.nav_footer ul li{
+    margin-left: 30px;
+    list-style: none;
+}
+
+.nav_footer ul li a{
+    color: #F0F4FA;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Responsivo */
+
+/* Menu Mobile */
+
+.menu_mobile{
+    display: none;
+}
+
+.mobile_menu_icon i{
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+.menu_mobile_ul{
+    position: absolute;
+    left: 50%;
+    top: 85px;
+    list-style: none;
+    width: 96%;
+    display: none;
+    transform: translateX(-50%);
+}
+
+.menu_mobile_ul li{
+    width: 100%;
+    border-bottom: 1px solid black;
+    text-align: center;
+    padding: 10px;
+    background-color: #0F3FD3;
+}
+
+.menu_mobile_ul li:last-child{
+    border-bottom: none;
+}
+
+.menu_mobile_ul li a{
+    text-decoration: none;
+    color: yellow;
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+/* Media Querie */
+
+@media (max-width: 1000px){
+
+    /* Menu Header */
+
+    .ul_desktop button{
+        display: none;
+    }
+
+    .ul_desktop li{
+        margin-right: 0;
+        margin-left: 30px;
+    }
+
+    /* Section 1 */
+
+    main .sponsors_section{
+        margin: 100px 0;
+    }
+
+    /* Section 02 */
+
+    .diferenciais_box{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .diferenciais_single_space{
+        width: 100%;
+    }
+
+    /* Section 04 */
+
+    .beneficios_section .container{
+        flex-direction: column;
+    }
+
+    .beneficios_text{
+        width: 100%;
+    }
+
+    .beneficios_single img{
+        margin-right: 15px;
+    }
+
+    .beneficios_single{
+        margin: 30px auto;
+        padding: 0 10px;
+    }
+
+    .beneficios_text_title{
+        text-align: center;
+    }
+
+    .beneficios_button{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+
+    .beneficios_section .beneficios_image{
+        width: 100%;
+        height: 500px;
+        padding-left: 0px;
+    }
+
+    .beneficios_section .beneficios_image_wraper{
+        width: 100%;
+        height: 100%;
+        padding-top: 0;
+    }
+
+    /* Section 5 */
+
+    .depoimentos_single_50{
+        width: 50% !important;
+    }
+
+    .depoimentos_single_25{
+        width: 50% !important;
+    }
+}
+
+@media (max-width: 846px){
+
+    .swiper{
+        width: 100%;
+        height: 530px !important;
+    }
+    
+    /* Section 05 */
+
+    .depoimentos_single_50{
+        width: 100% !important;
+    }
+
+    .depoimentos_single_25{
+        width: 100% !important;
+    }
+
+}
+
+@media (max-width: 765px){
+
+    /* Menu Header */
+
+    header .container{
+        padding: 40px 2%;
+    }
+
+    .menu_mobile{
+        display: block;
+    }
+
+    nav .ul_desktop{
+        display: none;
+    }
+
+    /* Section 01 */
+
+    main .sponsors_section{
+        margin: 20px 0;
+    }
+    
+    .sponsors_section .container{
+        flex-direction: column;
+    }
+
+    .sponsors_section .sponsors_single{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        cursor: pointer;
+    }
+
+    .sponsors_section img{
+        width: 100%;
+        max-width: 200px;
+    }
+
+    /* Section 06 */
+
+    .contato_section .container{
+        padding: 0 4%;
+    }
+
+    /* Footer */
+
+    footer nav{
+        flex-direction: column-reverse;
+    }
+
+    nav .desenvolvedor h2{
+        margin-top: 20px;
+    }
+
+    .nav_footer ul{
+        flex-direction: column;
+    }
+
+    .nav_footer ul li{
+        margin-left: 0px;
+        width: 100%;
+        text-align: center;
+        padding: 5px;
+    }
+
+    .nav_footer ul li:nth-of-type(2){
+        margin: 0 20px;
+    }
+}
+
+@media (max-width: 460px){
+        /* Main Header */
+
+        .main_header_macbook{
+            height: 300px;
+        }
+}
